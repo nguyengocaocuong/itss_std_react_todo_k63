@@ -34,11 +34,15 @@ function Todo() {
       }else return i
     })])
   }
+  const handleEnter = (value)=>{
+     putItems([...items, { key: getKey(), text: value, done: false }])
+  }
   return (
     <div className="panel">
       <div className="panel-heading">
         ITSS ToDoアプリ
       </div>
+      <Input handleEnter={handleEnter}/>
       {items.map(item => (
         <TodoItem key={item.key} item={item} handleClick={handleClick}/>
       ))}
