@@ -4,7 +4,7 @@
 　・タブで表示する
 　・サポートするステータスは「すべて」「未完了」「完了済み」
 */
-function Filter( {handleFilter,key=1} ) {
+function Filter( {handleFilter,key} ) {
   return (
     <div className="panel-tabs">
       <a onClick={()=>handleFilter(1)} className={`${key == 1 ? 'is-active' : ''}`}>全て</a>

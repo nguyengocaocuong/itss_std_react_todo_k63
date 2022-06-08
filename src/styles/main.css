@@ -3,8 +3,9 @@
 .container {
   margin-top: 2rem;
 }
-.btn{
-  width: 90%;
-  margin-right: 5%;
 
+.btn {
+  width: 90%;
+  font-size: 20px;
+  margin: 15px 5%;
 }

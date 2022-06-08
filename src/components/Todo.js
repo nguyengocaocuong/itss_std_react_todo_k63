@@ -50,7 +50,7 @@ function Todo() {
         {items.filter(i => key == 1 || key == 2 && i.done == false || key == 3 && i.done == true).length} items
       </div>
       <div className='panel-header'>
-        <button className='btn'>全てのTodo保存</button>
+        <button className='btn' onClick={clearItems}>全てのTodo保存</button>
       </div>
 
     </div>
